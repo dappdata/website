@@ -1,1 +1,330 @@
-welcome
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>dappdata | web3 security experts</title>
+  <link rel="shortcut icon" href="image/favicon/favicon.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Custom stylesheet -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Poppins:regular,800", "Space Grotesk:300,regular,500,600,700"]
+      }
+    });
+  </script>
+</head>
+
+<body data-theme="light">
+  <div class="site-wrapper position-relative overflow-hidden ">
+    <!-- Menu Area -->
+    <div id="loading">
+      <div class="preloader">
+        <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+          y="0px" viewBox="0 0 200 200" enable-background="new 0 0 0 0" xml:space="preserve">
+          <circle cx="20" cy="50" r="8" fill="#FF4B36">
+            <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 50; 0 0"
+              begin="0" dur="1.2s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="50" cy="50" r="8" fill="#FF713B">
+            <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 50; 0 0"
+              begin="0.2s" dur="1.2s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="80" cy="50" r="8" fill="#FF713B">
+            <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 50; 0 0"
+              begin="0.4s" dur="1.2s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="110" cy="50" r="8" fill="#FF873D">
+            <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 50; 0 0"
+              begin="0.6s" dur="1.2s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="140" cy="50" r="8" fill="#FF873D">
+            <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 50; 0 0"
+              begin="0.8s" dur="1.2s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="170" cy="50" r="8" fill="#FF9C40">
+            <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 50; 0 0"
+              begin="1s" dur="1.2s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+      </div>
+    </div>
+    <!-- Header Area -->
+    <header class="site-header site-header--menu-right site-header dark-mode-texts site-header--absolute">
+      <div class="container">
+        <nav class="navbar site-navbar offcanvas-active navbar-expand-lg  px-lg-2 px-0 pt-lg-3 pt-7">
+          <!-- Brand Logo-->
+          <div class="brand-logo pt-1">
+            <a href="#">
+              <h1 style="font-weight: 800;font-family: 'Poppins'; font-size: 25px;">dappdata</h1>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="mobile-menu">
+            <div class="navbar-nav-wrapper">
+              <ul class="navbar-nav main-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://console.dappdata.link" role="button"
+                    aria-expanded="false">Dashboard</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" id="navbarDropdown" href="#features" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services <i
+                      class="fas fa-angle-down"></i></a>
+                  <ul class="gr-menu-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="drop-menu-item">
+                      <a href="https://console.dappdata.link/service/audit">
+                        <strong>Security Audit</strong>
+                        <br>
+                        <small style="color:black">Affordable code reviews for everyone</small>
+                      </a>
+                    </li>
+                    <li class="drop-menu-item">
+                      <a href="https://console.dappdata.link/service/pentesting">
+                        Penetration Testing
+                        <br>
+                        <small style="color:black">Take a proactive approach to security. Find your project’s flaws
+                          before attackers do.</small>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://console.dappdata.link/contact" role="button"
+                    aria-expanded="false">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <button class="d-block d-lg-none offcanvas-btn-close" type="button" data-toggle="collapse"
+              data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true"
+              aria-label="Toggle navigation">
+              <i class="gr-cross-icon"></i>
+            </button>
+          </div>
+          <div class="header-btn pl-lg-8 ml-auto">
+            <a class="btn header-button header-btn-1 mr-lg-0 mr-3"
+              href="https://console.dappdata.link/service/audit/request">
+              REQUEST AN AUDIT
+            </a>
+          </div>
+          <!-- Mobile Menu Hamburger-->
+          <button class="navbar-toggler btn-close-off-canvas  hamburger-icon border-0" type="button"
+            data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!-- <i class="icon icon-simple-remove icon-close"></i> -->
+            <span class="hamburger hamburger--squeeze js-hamburger">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </span>
+          </button>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!-- navbar- -->
+    <!--Hero Area -->
+    <section class="bg-red-orange pt-lg-35 pb-lg-33 pb-md-23 pt-md-26 pt-sm-25 pt-24 pb-13 position-relative">
+      <div class="hero-area-image-group-1">
+        <div class="shape-1">
+          <img src="image/landing-2/Frame-1.png" alt="image">
+        </div>
+        <div class="shape-2">
+          <img src="image/landing-2/Frame-2.png" alt="image">
+        </div>
+        <div class="shape-3">
+          <img src="image/landing-2/Frame-3.png" alt="image">
+        </div>
+        <div class="shape-4">
+          <img src="image/landing-2/Frame-4.png" alt="image">
+        </div>
+        <div class="shape-5">
+          <img src="image/landing-2/Frame-5.png" alt="image">
+        </div>
+        <div class="shape-6">
+          <img src="image/landing-2/Frame-6.png" alt="image">
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-12 col-lg-12 col-md-12">
+            <div class="text-center pr-md-10 pb-md-4 pt-md-4" data-aos="zoom-in" data-aos-duration="800"
+              data-aos-once="true">
+              <p class="text-white font-size-5 font-weight-bold line-height-1p2 opacity-8 font-family-2 mb-md-9 mb-6">
+                We are
+                dappdata
+              </p>
+              <h2 class="text-white font-size-11 mb-md-10 mb-6 heading-letter-spacing-4">Web3 ecosystem security team
+              </h2>
+              <p class="text-white font-size-6 line-height-1p6 opacity-8 mb-md-13 mb-9 px-xl-15 px-md-11">We provide
+                high value security services to make web3 ecosystem safer.
+              </p>
+              <a class="btn btn-medium-s text-uppercase bg-black text-white font-family-2"
+                href="https://console.dappdata.link/service/audit/request">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--How it work Area -->
+    <section class="bg-white-lilac position-relative  pt-lg-25 pb-lg-26 pt-md-21 pb-md-19 pt-14 pb-15">
+      <div class="works-area-shape">
+        <div class="shape">
+          <img src="image/landing-2/w-shape.png" alt="image">
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center mb-lg-16 mb-md-11 mb-6">
+          <div class="col-xl-12 col-lg-12">
+            <div class="text-center">
+              <h2 class="text-black font-size-10 mb-6 heading-letter-spacing-3">How it works</h2>
+              <p class="font-size-5 text-boulder px-xl-12 px-lg-12 px-md-13">We ensure that your blockchain system works
+                as intended by identifying security vulnerabilities in your systems. We will work together to solve them
+                providing security over the entire lifecycle of the project.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-n9">
+          <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12 mb-9" data-aos="fade-up" data-aos-duration="800"
+            data-aos-once="true">
+            <div class="card-hover-1 h-100 bg-white rounded-10 text-center pt-sm-15 pb-sm-14 px-9 pt-12 pb-11">
+              <span class="text-red-orange font-size-10 mx-auto"><i class="fas fa-puzzle-piece"></i></span>
+              <h5 class="text-black font-size-7 mt-8 mb-4">1 - Request an audit</h5>
+              <p class="font-size-3 text-boulder mb-0">Request an audit with details about your team and project</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12 mb-9" data-aos="fade-up" data-aos-duration="800"
+            data-aos-once="true">
+            <div class="card-hover-1 h-100 bg-white rounded-10 text-center pt-sm-15 pb-sm-14 px-9 pt-12 pb-11">
+              <span class="text-red-orange font-size-10 mx-auto"><i class="fas fa-clock"></i></span>
+              <h5 class="text-black font-size-7 mt-8 mb-4">2 - Set your deadline</h5>
+              <p class="font-size-3 text-boulder mb-0">We organize a kick-off meeting and provide a quote. </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12 mb-9" data-aos="fade-up" data-aos-duration="800"
+            data-aos-once="true">
+            <div class="card-hover-1 h-100 bg-white rounded-10 text-center pt-sm-15 pb-sm-14 px-9 pt-12 pb-11">
+              <span class="text-red-orange font-size-10 mx-auto"><i class="fas fa-search"></i></span>
+              <h5 class="text-black font-size-7 mt-8 mb-4">3 - Audit</h5>
+              <p class="font-size-3 text-boulder mb-0">We certify the security of your smart contracts.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12 mb-9" data-aos="fade-up" data-aos-duration="800"
+            data-aos-once="true">
+            <div class="card-hover-1 h-100 bg-white rounded-10 text-center pt-sm-15 pb-sm-14 px-9 pt-12 pb-11">
+              <span class="text-red-orange font-size-10 mx-auto"><i class="fas fa-bug"></i></span>
+              <h5 class="text-black font-size-7 mt-8 mb-4">4 - Review</h5>
+              <p class="font-size-3 text-boulder mb-0">Private disclosure of existing vulnerabilities with the team</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12 mb-9" data-aos="fade-up" data-aos-duration="800"
+            data-aos-once="true">
+            <div class="card-hover-1 h-100 bg-white rounded-10 text-center pt-sm-15 pb-sm-14 px-9 pt-12 pb-11">
+              <span class="text-red-orange font-size-10 mx-auto"><i class="fas fa-tools"></i></span>
+              <h5 class="text-black font-size-7 mt-8 mb-4">5 - Fixes</h5>
+              <p class="font-size-3 text-boulder mb-0">Your team fixes the findings with out help and new version is
+                released.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12 mb-9" data-aos="fade-up" data-aos-duration="800"
+            data-aos-once="true">
+            <div class="card-hover-1 h-100 bg-white rounded-10 text-center pt-sm-15 pb-sm-14 px-9 pt-12 pb-11">
+              <span class="text-red-orange font-size-10 mx-auto"><i class="fas fa-star"></i></span>
+              <h5 class="text-black font-size-7 mt-8 mb-4">6 - Security certification</h5>
+              <p class="font-size-3 text-boulder mb-0">We issue a security certificate for your project.</p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-lg-16 mb-md-11 mb-6">
+            <div class="col-xl-12 col-lg-12">
+              <div class="text-center">
+                <h2 class="text-black font-size-8 mb-6 heading-letter-spacing-3">6-step auditing process</h2>
+                <p class="font-size-5 text-boulder px-xl-12 px-lg-12 px-md-13">One of the most demanded security assessment and source code verification to identify vulnerabilities in your smart contracts and recommend ways to fix them.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--Footer Area -->
+    <footer class="bg-white pt-lg-23 pb-lg-11 pt-md-19 pt-15 pb-9">
+      <div class="container">
+        <div class="row mb-n11 justify-content-center justify-content-md-start">
+          <div class="col-xl-4 col-lg-4 col-md-10 col-xs-10 mb-11">
+            <h2 style="font-weight: 800;font-family: 'Poppins'; font-size: 25px;">dappdata</h2>
+            <p class="text-boulder font-size-2 line-height-1p6 mb-0 pr-xl-20 pr-lg-10 pr-md-32">
+              Securing Web3 ecosystem</p>
+            <div class="l4-social-icon mx-n5 mt-9">
+              <a class="text-default-color-3 mx-5" href="https://www.linkedin.com/company/dappdata"><i
+                  class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-3 col-xs-5 mb-11">
+            <h3 class="font-family-1 text-boulder font-size-2 line-height-1p6 font-weight-normal mb-7">Services</h3>
+            <ul class="list-unstyled mb-n5">
+              <li class="mb-5"><a class="text-cod-gray font-size-2 line-height-1p6" href="https://console.dappdata.link/services/pentesting">Pentesting</a></li>
+              <li class="mb-5"><a class="text-cod-gray font-size-2 line-height-1p6" href="https://console.dappdata.link/services/audit">Security Audit</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-lg-2 col-md-3 col-xs-5  mb-11 pl-xl-14 pl-lg-8">
+            <h3 class="font-family-1 text-boulder font-size-2 font-weight-normal line-height-1p6 mb-7">Support</h3>
+            <ul class="list-unstyled mb-n5">
+              <li class="mb-5"><a class="text-cod-gray font-size-2 line-height-1p6" href="https://console.dappdata.link/legal/faq">FAQ</a></li>
+              <li class="mb-5"><a class="text-cod-gray font-size-2 line-height-1p6" href="https://console.dappdata.link/contact">Contact</a></li>
+              <li class="mb-5"><a class="text-cod-gray font-size-2 line-height-1p6" href="https://console.dappdata.link/legal/privacy-policy">Privacy policy</a></li>
+              <li class="mb-5"><a class="text-cod-gray font-size-2 line-height-1p6" href="https://console.dappdata.link/legal/terms-and-conditions">Terms and conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-xs-10  mb-11">
+            <h3 class="font-family-1 text-boulder font-size-2 line-height-1p6 font-weight-normal mb-7">Subscribe</h3>
+            <p class="text-cod-gray font-size-2 line-height-1p6 mb-8 pr-xl-3 pr-lg-12 pr-md-20 pr-4">Get the latest news
+              and updates right at your inbox.</p>
+            <div class="contact-form position-relative">
+              <img src="svg/qr.svg" alt="image" style="max-width: 125px;">
+              <form action="#" style="display:none">
+                <input type="email" name="email" id="email-2"
+                  class="form-control text-cod-gray font-size-2 line-height-1p6 pr-12" placeholder="Your email address">
+                <div class="send-icon">
+                  <i class="fas fa-paper-plane text-red-orange font-size-5"></i>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="mt-lg-19 mb-lg-11 mt-md-19 mt-15 mb-9 border-top border-nobel border-width-1 opacity-2"></div>
+          </div>
+          <div class="col-lg-12">
+            <div class="text-center">
+              <p class="font-size-2 line-height-1p6 text-gray mb-0">© 2023 - All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="js/vendor.min.js"></script>
+  <!-- Plugin's Scripts -->
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/counter-up/waypoint.js"></script>
+  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
